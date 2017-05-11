@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.pavel.swipe.Statistics">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarStats"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp">
+
+        <TextView
+            android:text="Natali"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            android:gravity="left"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/statsNatali"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="Pavel"
+            android:layout_marginRight="30dp"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="wrap_content"
+            android:id="@+id/statsPavel"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="WINS"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="15dp"
+        android:gravity="left"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/nataliWins"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:id="@+id/pavelWins"/>
+        </LinearLayout>
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:progressDrawable="@drawable/progress"
+        android:indeterminate="false"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/winsBar"
+        android:foregroundGravity="center_horizontal"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:gravity="left"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/nataliPercent"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:id="@+id/pavelPercent"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="30dp"
+        android:visibility="visible"
+        android:background="@color/colorPrimaryDark"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="POINTS"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:gravity="left"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/nataliPoints"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:id="@+id/pavelPoints"/>
+    </LinearLayout>
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:progressDrawable="@drawable/progress"
+        android:indeterminate="false"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/pointsBar"
+        android:foregroundGravity="center_horizontal"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:gravity="left"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/nataliPointsPercent"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:id="@+id/pavelPointsPercent"/>
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

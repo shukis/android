@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:text="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/textViewScore" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ace"
+            android:id="@+id/imageAce" />
+
+            <TextView
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="90dp"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/quantityAce" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/king"
+            android:id="@+id/imageKing"
+             />
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="90dp"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/quantityKing"
+             />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/queen"
+            android:id="@+id/imageQueen"
+             />
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="90dp"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/quantityQueen"
+            />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/jack"
+            android:id="@+id/imageJack"
+             />
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="90dp"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/quantityJack"
+             />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ten"
+            android:id="@+id/imageTen"
+             />
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="90dp"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/quantityTen"
+             />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/nine"
+            android:id="@+id/imageNine"
+            />
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="90dp"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/quantityNine"
+            />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/eight"
+            android:id="@+id/imageEight"
+             />
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="90dp"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/quantityEight"
+            />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/seven"
+            android:id="@+id/imageSeven"
+            />
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="90dp"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/quantitySeven"
+            />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/six"
+            android:id="@+id/imageSix"
+            />
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="90dp"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/quantitySix"
+             />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:text="Undo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/undo"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirm"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>
